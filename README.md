@@ -6,28 +6,28 @@ An online marketplace where users can buy and sell vinyl records. Users can brow
 
 ## Schema
 
-```
-const Album = new Schema (
+```js
+const Album = new Schema(
   {
     album: { type: String, required: true },
     artist: { type: String, required: true },
-    release-date: { type: Number, required: true },
+    release_date: { type: Number, required: true },
     price: { type: Number, required: true },
-    imageURL: {  type: String, required: true },
-    genre: {  type: String, required: true },
-    label: {  type: String, required: true },
-    description: {  type: String, required: true },
+    imageURL: { type: String, required: true },
+    genre: { type: String, required: true },
+    label: { type: String, required: true },
+    description: { type: String, required: true },
   },
   { timestamps: true }
-)
+);
 
-const User = new Schema (
-    {
-    email: {  type: String, required: true },
+const User = new Schema(
+  {
+    email: { type: String, required: true },
     password_digest: { type: String, required: true, select: false },
   },
   { timestamps: true }
-)
+);
 ```
 
 ## Figma
