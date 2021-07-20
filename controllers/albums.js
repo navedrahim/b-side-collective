@@ -38,7 +38,7 @@ export const createAlbum = async (req, res) => {
 
 export const updateAlbum = async (req, res) => {
   const { id } = req.params
-  const album = await Album.findByIdAndUpdate(id, req.body)
+  const album = await Album.findByIdAndUpdate(id, req.body, {new: true})
   res.status(200).json(album)
 }
 
