@@ -1,4 +1,4 @@
-import bcrpyt from "bcrpyt";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 import User from "../models/user.js";
@@ -13,7 +13,7 @@ exp.setDate(today.getDate() + 30);
 export const signUp = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const password_digest = await bcrpyt.hash(password, SALT_ROUNDS);
+    const password_digest = await bcrypt.hash(password, SALT_ROUNDS);
     const user = new User({
       email,
       password_digest,
