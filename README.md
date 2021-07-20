@@ -4,6 +4,31 @@
 
 An online marketplace where users can buy and sell vinyl records. Users can browse through a collection of albums. Users can create an account to register their own albums for sale.
 
+## Logo
+
+```
+                      <>
+        .-"""-.       ||::::::==========
+       /= ___  \      ||::::::==========
+      |- /~~~\  |     ||::::::==========
+      |=( '.' ) |     ||================
+      \__\_=_/__/     ||======Spicy=====
+       {_______}      ||================
+     /` *       `'--._||
+    /= .     [] .     { >
+   /  /|ooo     |`'--'||
+  (   )\_______/      ||
+   \``\/       \      ||
+    `-| ==    \_|     ||
+      /         |     ||
+     |=   >\  __/     ||
+     \   \ |- --|     ||
+      \ __| \___/     ||
+ jgs  _{__} _{__}     ||
+     (    )(    )     ||
+ ^^~  `"""  `"""  ~^^^~^^~~~^^^~^^^~^^^~^^~^
+```
+
 ## Schema
 
 ```js
