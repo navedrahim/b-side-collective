@@ -26,7 +26,7 @@ const albums = [
     description: "Seventh studio album of Michael Jackson, with over 35 million copies sold worldwide."
   },
   {
-    album: 'Jaihouse Rock EP',
+    album: 'Jailhouse Rock EP',
     artist: 'Elvis Presley',
     release_date: 1957,
     price: 20,
