@@ -1,23 +1,33 @@
-import { getAlbum } from "../../services/albums.js"
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { getAlbum, deleteAlbum } from "../../services/albums.js";
+import { useState, useEffect } from "react";
+import { useParams, Link, Redirect } from "react-router-dom";
 
 function AlbumDetail() {
-  const [album, setAlbum] = useState({})
-  const [isLoaded, setIsLoaded] = useState(false)
-  const { id } = useParams()
+  const [album, setAlbum] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [deleted, setDeleted] = useState(false);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchAlbum = async () => {
-      const album = await getAlbum(id)
-      setAlbum(album)
-      setIsLoaded(true)
-    }
-    fetchAlbum()
-  }, [id])
+      const album = await getAlbum(id);
+      setAlbum(album);
+      setIsLoaded(true);
+    };
+    fetchAlbum();
+  }, [id]);
 
   if (!isLoaded) {
-    return <h2>Loading...</h2>
+    return <h2>Loading...</h2>;
+  }
+
+  const handleDelete = async () => {
+    await deleteAlbum(album._id);
+    setDeleted(true);
+  };
+
+  if (deleted) {
+    return <Redirect to={"/albums"} />;
   }
 
   return (
@@ -30,8 +40,16 @@ function AlbumDetail() {
       <p>{album.description}</p>
       <h2>${album.price}</h2>
       <img src={album.imageURL} alt={album.album}></img>
+      <div className="button-container">
+        <Link className="edit-button" to={`/albums/${album._id}/edit`}>
+          Edit
+        </Link>
+        <button className="delete-button" onClick={handleDelete}>
+          Delete
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default AlbumDetail
+export default AlbumDetail;
