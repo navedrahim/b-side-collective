@@ -11,7 +11,7 @@ export const getAlbums = async () => {
 
 export const getAlbum = async (id) => {
   try {
-    const response = await api.get(`/products/${id}`);
+    const response = await api.get(`/albums/${id}`);
     return response.data;
   } catch (error) {
     throw error;
