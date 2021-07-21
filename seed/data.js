@@ -1,7 +1,7 @@
 import db from "../db/connections.js";
 import Album from "../models/album.js";
 import User from "../models/user.js";
-import bcrypt from "bcrpyt";
+import bcrypt from "bcrypt";
 
 const insertData = async () => {
   await db.dropDatabase();
