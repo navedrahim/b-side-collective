@@ -17,3 +17,12 @@ export const getAlbum = async (id) => {
     throw error;
   }
 };
+
+export const createAlbum = async (album) => {
+  try {
+    const response = await api.post('/albums', album)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
