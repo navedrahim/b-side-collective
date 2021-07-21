@@ -26,3 +26,12 @@ export const createAlbum = async (album) => {
     throw error
   }
 }
+
+export const editAlbum = async (id, album) => {
+  try {
+    const response = await api.put(`/albums/${id}`, album)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
