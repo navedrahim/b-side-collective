@@ -35,3 +35,12 @@ export const editAlbum = async (id, album) => {
     throw error
   }
 }
+
+export const deleteAlbum = async id => {
+  try {
+    const response = await api.delete(`/albums/${id}`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
