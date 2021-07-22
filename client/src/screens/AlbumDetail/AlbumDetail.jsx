@@ -1,8 +1,9 @@
 import { getAlbum, deleteAlbum } from "../../services/albums.js";
 import { useState, useEffect } from "react";
 import { useParams, Link, Redirect } from "react-router-dom";
+import Layout from "../../components/Layout/Layout.jsx";
 
-function AlbumDetail() {
+function AlbumDetail(props) {
   const [album, setAlbum] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   const [deleted, setDeleted] = useState(false);
@@ -31,6 +32,7 @@ function AlbumDetail() {
   }
 
   return (
+    <Layout user={props.user}>
     <div className="album-detail-container">
       <h2>{album.album}</h2>
       <h2>{album.artist}</h2>
@@ -49,6 +51,7 @@ function AlbumDetail() {
         </button>
       </div>
     </div>
+    </Layout>
   );
 }
 

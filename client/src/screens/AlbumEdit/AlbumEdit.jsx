@@ -1,8 +1,9 @@
 import { editAlbum, getAlbum } from "../../services/albums";
 import { useParams, Redirect } from "react-router-dom"
 import { useState, useEffect } from "react"
+import Layout from "../../components/Layout/Layout";
 
-function AlbumEdit() {
+function AlbumEdit(props) {
 const { id } = useParams()
 const [album, setAlbum] = useState({
   album: "",
@@ -45,6 +46,7 @@ if (isUpdated) {
 }
 
 return (
+  <Layout user={props.user}>
   <form className="edit-form" onSubmit={handleSubmit}>
       <input
         className="input-album"
@@ -117,6 +119,7 @@ return (
         Submit
       </button>
     </form>
+    </Layout>
 )
 }
 
