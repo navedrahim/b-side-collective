@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:ital,wght@1,700&display=swap");
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #575151;
+}
+
+.logo {
+  color: #f47126;
+  margin-left: 3vw;
+  font-size: 36px;
+  font-family: "Titillium Web", sans-sherif;
+  text-shadow: 4px 4px #000000;
+}
+
+.links {
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #efe0ca;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
