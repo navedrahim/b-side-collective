@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { getAlbums } from "../../services/albums.js";
 import { Link } from "react-router-dom"
+import Layout from "../../components/Layout/Layout.jsx";
 
-function Albums() {
+function Albums(props) {
   const [albums, setAlbums] = useState([]);
   useEffect(() => {
     const fetchAlbums = async () => {
@@ -13,6 +14,7 @@ function Albums() {
   }, []);
 
   return (
+    <Layout user={props.user}>
     <div>
       {albums.map((album) => (
         <Link to={`/albums/${album._id}`}>
@@ -23,6 +25,7 @@ function Albums() {
         </Link>
       ))}
     </div>
+    </Layout>
   );
 }
 

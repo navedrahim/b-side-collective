@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { createAlbum } from "../../services/albums";
 import { Redirect } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 
-const AlbumCreate = () => {
+const AlbumCreate = (props) => {
   const [album, setAlbum] = useState({
     album: "",
     artist: "",
@@ -35,6 +36,7 @@ const AlbumCreate = () => {
   }
 
   return (
+    <Layout user={props.user}>
     <form className="create-form" onSubmit={handleSubmit}>
       <input
         className="input-album"
@@ -106,6 +108,7 @@ const AlbumCreate = () => {
         Submit
       </button>
     </form>
+    </Layout>
   );
 };
 

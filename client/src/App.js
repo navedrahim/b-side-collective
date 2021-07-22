@@ -25,10 +25,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/sign-up">
-          <SignUp setUser={setUser} />
+          <SignUp setUser={setUser} user={user} />
         </Route>
         <Route path="/sign-in">
-          <SignIn setUser={setUser} />
+          <SignIn setUser={setUser} user={user} />
         </Route>
         <Route path="/sign-out">
           <SignOut setUser={setUser}/>

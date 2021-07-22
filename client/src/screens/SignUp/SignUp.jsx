@@ -1,6 +1,7 @@
 import { signUp } from "../../services/users.js"
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
+import Layout from "../../components/Layout/Layout.jsx"
 
 function SignUp(props) {
   const history = useHistory()
@@ -51,6 +52,7 @@ function SignUp(props) {
   const { email, password, passwordConfirm } = form
 
   return (
+    <Layout user={props.user}>
     <div className="signup-form">
       <form onSubmit={onSignUp}>
         <input
@@ -81,6 +83,7 @@ function SignUp(props) {
       </form>
       
     </div>
+    </Layout>
   )
 }
 export default SignUp
