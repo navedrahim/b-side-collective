@@ -3,23 +3,43 @@ import Albums from "./screens/Albums/Albums.jsx";
 import AlbumDetail from "./screens/AlbumDetail/AlbumDetail.jsx"
 import AlbumCreate from "./screens/AlbumCreate/AlbumCreate.jsx";
 import AlbumEdit from "./screens/AlbumEdit/AlbumEdit.jsx";
-import { Route, Switch } from "react-router-dom";
+import SignUp from "./screens/SignUp/SignUp.jsx"
+import SignOut from "./screens/SignOut/SignOut.jsx"
+import { verifyUser } from "./services/users.js"
+import { useState, useEffect } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
+
   return (
     <div className="App">
       <Switch>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser} />
+        </Route>
+        <Route path="/sign-out">
+          <SignOut setUser={setUser}/>
+        </Route>
         <Route exact path="/albums">
-          <Albums />
+          <Albums user={user}/>
         </Route>
         <Route exact path="/albums/:id">
-          <AlbumDetail />
+          <AlbumDetail user={user}/>
         </Route>
         <Route exact path="/add">
-          <AlbumCreate/>
+          { user ? <AlbumCreate user={user}/> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/albums/:id/edit">
-          <AlbumEdit />
+        { user ? <AlbumEdit user={user}/> : <Redirect to="/sign-up" />}
         </Route>
       </Switch>
     </div>
