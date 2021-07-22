@@ -5,6 +5,7 @@ import AlbumCreate from "./screens/AlbumCreate/AlbumCreate.jsx";
 import AlbumEdit from "./screens/AlbumEdit/AlbumEdit.jsx";
 import SignUp from "./screens/SignUp/SignUp.jsx"
 import SignOut from "./screens/SignOut/SignOut.jsx"
+import SignIn from "./screens/SignIn/SignIn.jsx";
 import { verifyUser } from "./services/users.js"
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
@@ -25,6 +26,9 @@ function App() {
       <Switch>
         <Route path="/sign-up">
           <SignUp setUser={setUser} />
+        </Route>
+        <Route path="/sign-in">
+          <SignIn setUser={setUser} />
         </Route>
         <Route path="/sign-out">
           <SignOut setUser={setUser}/>
