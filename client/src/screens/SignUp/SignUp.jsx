@@ -20,22 +20,21 @@ function SignUp(props) {
 
   const onSignUp = async (event) => {
     event.preventDefault()
-    console.log("hi")
-  //   const { setUser } = props
-  //   try {
-  //     const user = await signUp(form)
-  //     setUser(user)
-  //     history.push("/albums")
-  //   } catch (error) {
-  //     console.error(error)
-  //       setForm({
-  //       email: "",
-  //       password: "",
-  //       passwordConfirm: "",
-  //       isError: true,
-  //       errorMsg: "Sign Up Details Invalid",
-  //     })
-  // }
+    const { setUser } = props
+    try {
+      const user = await signUp(form)
+      setUser(user)
+      history.push("/albums")
+    } catch (error) {
+      console.error(error)
+        setForm({
+        email: "",
+        password: "",
+        passwordConfirm: "",
+        isError: true,
+        errorMsg: "Sign Up Details Invalid",
+      })
+  }
   }
   const renderError = () => {
     const toggleForm = form.isError ? "danger" : ""
@@ -78,8 +77,9 @@ function SignUp(props) {
         placeholder="Confirm Password"
         onChange={handleChange}
         />
+        {renderError()}
       </form>
-      {renderError()}
+      
     </div>
   )
 }
