@@ -1,3 +1,4 @@
+import "./AlbumDetail.css";
 import { getAlbum, deleteAlbum } from "../../services/albums.js";
 import { useState, useEffect } from "react";
 import { useParams, Link, Redirect } from "react-router-dom";
@@ -33,24 +34,32 @@ function AlbumDetail(props) {
 
   return (
     <Layout user={props.user}>
-    <div className="album-detail-container">
-      <h2>{album.album}</h2>
-      <h2>{album.artist}</h2>
-      <h2>{album.release_date}</h2>
-      <h2>{album.label}</h2>
-      <h2>{album.genre}</h2>
-      <p>{album.description}</p>
-      <h2>${album.price}</h2>
-      <img src={album.imageURL} alt={album.album}></img>
-      <div className="button-container">
-        <Link className="edit-button" to={`/albums/${album._id}/edit`}>
-          Edit
-        </Link>
-        <button className="delete-button" onClick={handleDelete}>
-          Delete
-        </button>
+      <div className="album-detail-container">
+        <div className="detail">
+          <div className="album-name">{album.album}</div>
+          <div className="artist">{album.artist}</div>
+          <div className="release-date">{album.release_date}</div>
+          <div className="genre">{album.genre}</div>
+          <div className="label">{album.label}</div>
+          <div className="description">{album.description}</div>
+          <div className="price">${album.price}</div>
+          <div className="button-container">
+            <button className="edit-button">
+              <Link to={`/albums/${album._id}/edit`}>
+                EDIT
+              </Link>
+            </button>
+            <button className="delete-button" onClick={handleDelete}>
+              DELETE
+            </button>
+          </div>
+        </div>
+        <img
+          className="album-detail-image"
+          src={album.imageURL}
+          alt={album.album}
+        />
       </div>
-    </div>
     </Layout>
   );
 }
