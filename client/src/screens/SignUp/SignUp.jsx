@@ -1,8 +1,9 @@
+import "./SignUp.css"
 import { signUp } from "../../services/users.js"
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
 import Layout from "../../components/Layout/Layout.jsx"
-
+ 
 function SignUp(props) {
   const history = useHistory()
   const [form, setForm] = useState({
