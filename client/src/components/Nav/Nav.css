@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
 a,
-a:hover,
 a:focus,
 a:active {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  color: #efe0ca;
 }
 
 .nav {
