@@ -1,0 +1,33 @@
+.album-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.album-cards {
+  margin: 0 2vw;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.albums-card {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  padding: 1vh 1vw;
+}
+.albums-card:hover {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2),
+    0 20px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000000;
+}
+.albums-cover {
+  width: 25vw;
+  height: 40vh;
+}
+.albums-name,
+.albums-artist {
+  font-family: "Titillium Web", sans-sherif;
+  margin-top: 1vh;
+  font-size: 36px;
+}
