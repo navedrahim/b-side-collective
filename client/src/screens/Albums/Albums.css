@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 .album-cards {
   margin: 0 2vw;
@@ -13,7 +14,7 @@
 .albums-card {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 22vw;
   padding: 1vh 1vw;
 }
 .albums-card:hover {
@@ -22,8 +23,8 @@
   color: #000000;
 }
 .albums-cover {
-  width: 25vw;
-  height: 40vh;
+  width: 22vw;
+  height: 22vw;
 }
 .albums-name,
 .albums-artist {
