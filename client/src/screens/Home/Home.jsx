@@ -19,10 +19,14 @@ return (
     <div className="home-secondary-section">
       <div className="home-secondary-card">
         <p>Browse a wide selection of new and vintage vinyl. Find the perfect addition to your collection. </p>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/8136gM-aYFL._SL1425_.jpg"/>
+        <div className="secondary-image-container">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/8136gM-aYFL._SL1425_.jpg"/>
+        </div>
       </div>
       <div className="home-secondary-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg"/>
+        <div className="secondary-image-container">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg"/>
+        </div>
         <p>Members can offer vinyl from their collection for sale.</p>
       </div>
     </div>
