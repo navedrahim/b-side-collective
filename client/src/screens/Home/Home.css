@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body { 
+  background-color: #EFE0CA;
+}
+.layout-children {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header section styling  */
+
+.home-header {
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  background-color: #575151;
+  padding: 10px;
+}
+
+.home-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.home-header h2 {
+  color: #EFE0CA;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.home-header button {
+  background-color: #F47126;
+  padding: 12px;
+  height: 60px;
+  width: 125px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.home-header img  {
+  width: 700px;
+  margin-right: 60px;
+  margin-left: 20px;
+}
+
+/* secondary section styling */
+
+.home-secondary-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.home-secondary-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80vw;
+  margin: 30px;
+  background-color: #575151;
+  color: #EFE0CA;
+}
+
+.home-secondary-card img {
+  width: 250px;
+}
+
+.home-secondary-card p {
+  padding: 30px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+
+}
