@@ -14,11 +14,10 @@ body {
   flex-wrap: none;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   background-color: #575151;
-  padding: 10px;
-  padding-bottom: 40px;
+  padding: 0 20px 20px 20px;
 }
 
 .home-header-text {
@@ -26,31 +25,31 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 40px 20px;
-  margin: 25px;
+  padding: 20px 20px 40px 30px;
+  margin: 50px;
   font-family: "Roboto", sans-serif;
   
 }
 
 .home-header h2 {
   color: #EFE0CA;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 100px;
 }
 
 .home-header button {
   background-color: #F47126;
   padding: 12px;
-  height: 60px;
-  width: 125px;
-  font-size: 18px;
-  font-weight: 600;
+  height: 95px;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 500;
   border: none;
 }
 
 .home-header img  {
-  width: 650px;
-  margin: 10px 60px 20px 20px;
+  width: 840px;
+  margin: 10px 120px 20px 20px;
 }
 
 /* secondary section styling */
@@ -65,20 +64,21 @@ body {
 .home-secondary-card {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  width: 70vw;
-  margin: 30px;
+  padding: 25px;
+  width: 65vw;
+  margin: 65px 0;
   background-color: #575151;
   color: #EFE0CA;
 }
 
-.home-secondary-card img {
-  width: 300px;
+.secondary-image-container img {
+  width: 480px;
 }
 
+
 .home-secondary-card p {
-  padding: 30px;
-  font-size: 20px;
+  padding: 40px;
+  font-size: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 
