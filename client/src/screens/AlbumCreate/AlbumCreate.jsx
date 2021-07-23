@@ -40,7 +40,7 @@ const AlbumCreate = (props) => {
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
-          className="input-album"
+          className="create-album"
           placeholder="Album"
           value={album.album}
           name="album"
@@ -49,7 +49,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-artist"
+          className="create-artist"
           placeholder="Artist"
           value={album.artist}
           name="artist"
@@ -57,7 +57,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-release"
+          className="create-release"
           placeholder="Release Date"
           value={album.release_date}
           name="release_date"
@@ -65,7 +65,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-price"
+          className="create-price"
           placeholder="Price"
           value={album.price}
           name="price"
@@ -81,7 +81,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-genre"
+          className="create-genre"
           placeholder="Genre"
           value={album.genre}
           name="genre"
@@ -89,7 +89,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-label"
+          className="create-label"
           placeholder="Label"
           value={album.label}
           name="label"
@@ -97,7 +97,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <textarea
-          className="textarea-description"
+          className="create-textarea"
           rows={10}
           placeholder="Description"
           value={album.description}
