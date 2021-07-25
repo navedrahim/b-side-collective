@@ -1,16 +1,7 @@
 import mongoose from "mongoose";
 
-// let MONGODB_URI =
-//   process.env.PROD_MONGODB ||
-//   'mongodb://127.0.0.1:27017/bsidedev'
-
-let MONGODB_URI;
-if (process.env.NODE_ENV === "production") {
-  MONGODB_URI = process.env.PROD_MONGODB;
-} else {
-  MONGODB_URI =
-    "mongodb+srv://gino:gino1@cluster0.fupjh.mongodb.net/bsideDevDatabase?retryWrites=true&w=majority";
-}
+let MONGODB_URI =
+  process.env.PROD_MONGODB || "mongodb://127.0.0.1:27017/bsidedev";
 
 // Uncomment to debug Mongoose queries
 // mongoose.set('debug', true)
