@@ -32,3 +32,61 @@
   margin-top: 1vh;
   font-size: 36px;
 }
+
+@media only screen and (max-width: 768px) {
+  .album-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .albums-card {
+    width: 33vw;
+  }
+  .albums-cover {
+    width: 33vw;
+    height: 33vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-sherif;
+    margin-top: 1vh;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .album-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .albums-card {
+    width: 50vw;
+  }
+  .albums-cover {
+    width: 50vw;
+    height: 50vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-sherif;
+    margin-top: 1vh;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .albums-card {
+    width: 60vw;
+  }
+  .albums-cover {
+    width: 60vw;
+    height: 60vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-sherif;
+    margin-top: 1vh;
+    font-size: 20px;
+  }
+}

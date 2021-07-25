@@ -48,3 +48,37 @@
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+  .create-form {
+    width: 70%;
+  }
+  .create-form button {
+    width: 15vw;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .create-form {
+    width: 75%;
+  }
+  .create-form input {
+    font-size: 15px;
+  }
+  .create-form textarea {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .create-form {
+    width: 80%;
+  }
+  .create-form input {
+    font-size: 13px;
+  }
+  .create-form textarea {
+    font-size: 13px;
+  }
+  .create-form button {
+    width: 20vw;
+  }
+}
