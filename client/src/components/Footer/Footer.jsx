@@ -5,9 +5,9 @@ function Footer() {
     <footer>
       <div className="footer-links">
         <p>&copy;</p>
-        <a className="github-link" href="https://github.com/navedrahim">naved's github</a>
-        <a className="github-link" href="https://github.com/Gino2B">gene's github</a>
-        <a className="github-link" href="https://github.com/flexibleidealist">nick's github</a>
+        <a className="github-link" href="https://github.com/navedrahim">Naved Rahim</a>
+        <a className="github-link" href="https://github.com/Gino2B">Gene Baybay</a>
+        <a className="github-link" href="https://github.com/flexibleidealist">Nicholas Rynearson</a>
       </div>
     </footer>
   )
