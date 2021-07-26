@@ -75,14 +75,6 @@ function AlbumEdit(props) {
             required
             onChange={handleChange}
           />
-          <input
-            className="input-price"
-            placeholder="Price"
-            value={album.price}
-            name="price"
-            required
-            onChange={handleChange}
-          />
 
           <input
             className="input-genre"
@@ -102,10 +94,18 @@ function AlbumEdit(props) {
           />
           <textarea
             className="textarea-description"
-            rows={10}
+            rows={5}
             placeholder="Description"
             value={album.description}
             name="description"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-price"
+            placeholder="Price"
+            value={`$${album.price}`}
+            name="price"
             required
             onChange={handleChange}
           />
