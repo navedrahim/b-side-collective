@@ -194,6 +194,7 @@ body {
   }
   .home-secondary-card img {
     width: 300px;
+    margin: 8px;
   }
   .home-secondary-card p {
     font-size: 24px;
