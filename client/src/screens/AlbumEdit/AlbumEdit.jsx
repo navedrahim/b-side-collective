@@ -110,7 +110,7 @@ function AlbumEdit(props) {
             onChange={handleChange}
           />
           <button type="submit" className="submit-button">
-            Submit
+            SUBMIT
           </button>
         </form>
         <div className="image-container">
