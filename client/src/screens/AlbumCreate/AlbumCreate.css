@@ -63,9 +63,11 @@
   }
   .create-form input {
     font-size: 15px;
+    width: 80%;
   }
   .create-form textarea {
     font-size: 15px;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 375px) {

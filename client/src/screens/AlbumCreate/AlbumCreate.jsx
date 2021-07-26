@@ -106,7 +106,7 @@ const AlbumCreate = (props) => {
           onChange={handleChange}
         />
         <button type="submit" className="submit-button">
-          Add
+          ADD
         </button>
       </form>
     </Layout>

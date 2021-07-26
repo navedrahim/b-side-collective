@@ -59,7 +59,10 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .album-cards {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
   .albums-card {
     width: 50vw;
   }
