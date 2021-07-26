@@ -41,6 +41,10 @@
   background-color: #efe0ca;
 }
 
+.input-price {
+  margin-bottom: 20px;
+}
+
 .input-artist,
 .input-release,
 .input-genre {
