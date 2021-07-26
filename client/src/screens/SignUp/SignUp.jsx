@@ -47,7 +47,7 @@ function SignUp(props) {
         </button>
       )
     } else {
-      return <button type="submit">Sign Up</button>
+      return <button type="submit">SIGN UP</button>
     }
   }
   const { email, password, passwordConfirm } = form
