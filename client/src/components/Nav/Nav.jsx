@@ -56,7 +56,6 @@ const Nav = ({ user }) => {
         </NavLink>
         <button
           className="hamburger"
-          // style={{ display: visible ? "none" : "flex" }}
           onClick={() => setHamburger(!hamburger)}
         >
           MENU
