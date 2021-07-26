@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .signup-form {
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   width: 50%;
   padding: 30px 60px;
   margin: auto;
@@ -27,7 +27,7 @@
 }
 
 .signup-form button {
-  background-color: #F47126;
+  background-color: #f47126;
   color: white;
   height: 55px;
   width: 125px;
@@ -36,10 +36,19 @@
   font-size: 22px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-
 }
 
 /* footer {
   position: fixed;
   bottom: 0;
 } */
+
+@media only screen and (max-width: 768px) {
+  .signup-form {
+    width: 70%;
+    padding: 30px 0px;
+  }
+  .signup-form input {
+    width: 80%;
+  }
+}
