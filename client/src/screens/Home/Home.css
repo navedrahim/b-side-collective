@@ -85,6 +85,13 @@ body {
 }
 
 /* media queries  */
+  /* 1800 break point */
+  @media screen and (min-width: 1750px){
+    .home-header img {
+      width: 1000px;
+    }
+  }
+
   /* 1024 break point */
 @media screen and (max-width: 1024px) {
   .home-header {
