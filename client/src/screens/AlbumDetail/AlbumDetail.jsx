@@ -44,11 +44,9 @@ function AlbumDetail(props) {
           <div className="description">{album.description}</div>
           <div className="price">${album.price}</div>
           <div className="button-container">
-            <button className="edit-button">
-              <Link to={`/albums/${album._id}/edit`}>
-                EDIT
-              </Link>
-            </button>
+            <Link to={`/albums/${album._id}/edit`}>
+              <button className="edit-button">EDIT</button>
+            </Link>
             <button className="delete-button" onClick={handleDelete}>
               DELETE
             </button>
