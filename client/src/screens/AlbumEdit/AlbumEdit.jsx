@@ -94,23 +94,28 @@ function AlbumEdit(props) {
           />
           <textarea
             className="textarea-description"
-            rows={5}
+            rows={3}
             placeholder="Description"
             value={album.description}
             name="description"
             required
             onChange={handleChange}
           />
+          <div className="price">
+          <span>$</span>
           <input
             className="input-price"
             placeholder="Price"
-            value={`$${album.price}`}
+            value={album.price}
             name="price"
             required
             onChange={handleChange}
           />
+
+          </div>
+          
           <button type="submit" className="submit-button">
-            SUBMIT
+            SAVE
           </button>
         </form>
         <div className="image-container">
