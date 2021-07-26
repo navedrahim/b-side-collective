@@ -30,7 +30,7 @@ const alwaysOptions = (
   </>
 );
 const Nav = ({ user }) => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [hamburger, setHamburger] = useState(false);
 
   useEffect(() => {
