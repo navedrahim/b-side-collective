@@ -1,0 +1,19 @@
+.search-form {
+margin: 0 auto;
+margin-top: 40px;
+
+}
+
+.search-input {
+  height: 45px;
+  width: 40vw;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  background-color: #575151;
+  color: #efe0ca;
+}
+
+.search-form ::placeholder {
+  color: #efe0ca;
+}
