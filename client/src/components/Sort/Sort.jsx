@@ -9,7 +9,7 @@ const Sort = (props) => {
   return (
     <form className="sort-container" onSubmit={props.handleSubmit}>
       <select className="sort" onChange={handleSort}>
-        <option value="">&nbsp; Select Sort Type &nbsp;</option>
+        <option value="">&nbsp; Sort Type &nbsp;</option>
         <option className="option" value="album-ascending">&nbsp; Albums, A-Z &nbsp;</option>
         <option className="option" value="album-descending">&nbsp; Albums, Z-A &nbsp;</option>
         <option className="option" value="artist-ascending">&nbsp; Artists, A-Z &nbsp;</option>
