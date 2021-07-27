@@ -7,12 +7,11 @@
 
 .sort {
   height: 30px;
-  text-indent: 22px;
   background-color: #575151;
   color: #efe0ca;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  max-width: 36vw;
+  width: fit-content;
 }
 
 @media (max-width: 768px) {
