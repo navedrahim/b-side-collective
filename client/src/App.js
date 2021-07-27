@@ -27,7 +27,8 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/cart">
-          <Cart />
+          <Cart user={user} />
+          {/* { user ? <Cart user={user} /> : <Redirect to="/sign-up" />} */}
         </Route>
         <Route exact path="/">
           <Home user={user}/>
