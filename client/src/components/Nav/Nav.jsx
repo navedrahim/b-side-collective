@@ -55,11 +55,13 @@ const Nav = ({ user }) => {
           B-Side Collective
         </NavLink>
         <button
-          className="hamburger"
+          className="hamburger" id="hamburger-button"
           // style={{ display: visible ? "none" : "flex" }}
           onClick={() => setHamburger(!hamburger)}
         >
-          MENU
+          <div className="hamburger-detail"></div>
+          <div className="hamburger-detail"></div>
+          <div className="hamburger-detail"></div>
         </button>
         <div className="nav">
           <div className="links">
