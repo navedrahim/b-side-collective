@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-body { 
-  background-color: #EFE0CA;
+body {
+  background-color: #efe0ca;
 }
 .layout-children {
   display: flex;
@@ -28,17 +28,16 @@ body {
   padding: 20px 20px 40px 30px;
   margin: 50px;
   font-family: "Roboto", sans-serif;
-  
 }
 
 .home-header h2 {
-  color: #EFE0CA;
+  color: #efe0ca;
   font-size: 50px;
   margin-bottom: 100px;
 }
 
 .home-header button {
-  background-color: #F47126;
+  background-color: #f47126;
   padding: 12px;
   height: 95px;
   width: 200px;
@@ -47,7 +46,7 @@ body {
   border: none;
 }
 
-.home-header img  {
+.home-header img {
   width: 840px;
   margin: 10px 120px 20px 20px;
 }
@@ -68,31 +67,29 @@ body {
   width: 65vw;
   margin: 65px 0;
   background-color: #575151;
-  color: #EFE0CA;
+  color: #efe0ca;
 }
 
 .secondary-image-container img {
   width: 480px;
 }
 
-
 .home-secondary-card p {
   padding: 35px;
   font-size: 35px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-
 }
 
 /* media queries  */
-  /* 1800 break point */
-  @media screen and (min-width: 1750px){
-    .home-header img {
-      width: 1000px;
-    }
+/* 1800 break point */
+@media screen and (min-width: 1750px) {
+  .home-header img {
+    width: 1000px;
   }
+}
 
-  /* 1024 break point */
+/* 1024 break point */
 @media screen and (max-width: 1024px) {
   .home-header {
     flex-direction: column;
@@ -114,7 +111,7 @@ body {
     padding: 12px;
     height: 75px;
     width: 180px;
-    font-size: 25px 
+    font-size: 25px;
   }
   .home-header img {
     margin: 15px;
@@ -130,7 +127,7 @@ body {
     padding: 10px;
   }
 }
-  /* 768 break point */
+/* 768 break point */
 
 @media screen and (max-width: 768px) {
   .home-header {
@@ -152,7 +149,7 @@ body {
     padding: 12px;
     height: 75px;
     width: 180px;
-    font-size: 25px 
+    font-size: 25px;
   }
   .home-header img {
     margin: 15px;
@@ -162,7 +159,7 @@ body {
     width: 75vw;
   }
 }
-    /* 540 break point */
+/* 540 break point */
 
 @media screen and (max-width: 540px) {
   .home-header {
@@ -188,7 +185,7 @@ body {
     padding: 12px;
     height: 65px;
     width: 170px;
-    font-size: 22px 
+    font-size: 22px;
   }
   .home-header img {
     margin: 15px;
@@ -207,50 +204,47 @@ body {
     font-size: 24px;
   }
 }
-    /* 375 break point */
+/* 375 break point */
 @media screen and (max-width: 540px) {
-      
-      .home-header-text {
-        margin: 20px;
-        padding: 10px;
-      }
-    
-      .home-header h2 {
-        margin-bottom: 35px;
-        font-size: 36px;
-      }
-      .home-header button {
-        margin: 5px;
-        padding: 12px;
-        height: 65px;
-        width: 170px;
-        font-size: 22px 
-      }
-      .home-header img {
-        margin: 8px;
-        width: 325px;
-      }
-      .home-secondary-card {
-        width: 75vw;
-        margin: 10px auto;
-        padding: 10px;
-      }
-      .home-secondary-card img {
-        width: 250px;
-      }
-      .home-secondary-card p {
-        font-size: 22px;
-        padding: 5px 10px;
-      }
-    }
+  .home-header-text {
+    margin: 20px;
+    padding: 10px;
+  }
 
-    @media screen and (max-height: 825px) {
-      .home-header {
-        height: fit-content;
-      }
-      
-      .home-header img {
-        margin: 8px;
-        height: 95%;
-      }
-    }
+  .home-header h2 {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+  .home-header button {
+    margin: 5px;
+    padding: 12px;
+    height: 65px;
+    width: 170px;
+    font-size: 22px;
+  }
+  .home-header img {
+    margin: 8px;
+    width: 325px;
+  }
+  .home-secondary-card {
+    width: 75vw;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .home-secondary-card img {
+    width: 250px;
+  }
+  .home-secondary-card p {
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-height: 825px) {
+  .home-header {
+    height: fit-content;
+  }
+  .home-header img {
+    margin: 8px;
+    height: 95%;
+  }
+}

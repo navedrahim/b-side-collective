@@ -8,6 +8,7 @@ function AlbumDetail(props) {
   const [album, setAlbum] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   const [deleted, setDeleted] = useState(false);
+  const [cartText, setCartText] = useState("ADD TO CART")
   const { id } = useParams();
 
   useEffect(() => {
@@ -42,6 +43,7 @@ function AlbumDetail(props) {
     localStorage.setItem("cart", id)
     console.log(`localSTorage: ${localStorage}`)
   }
+    setCartText("ADDED")
   }
   return (
     <Layout user={props.user}>
@@ -70,7 +72,7 @@ function AlbumDetail(props) {
         />
       </div>
       <div className="add-to-cart">
-        <button className="add-to-cart-button" onClick={addToCart}>ADD TO CART</button>
+        <button className="add-to-cart-button" onClick={addToCart}>{cartText}</button>
       </div>
     </Layout>
   );
