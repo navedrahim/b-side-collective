@@ -17,14 +17,14 @@
 .cart-image {
   height: 175px;
   width: 175px;
-  
 }
 
 .item-text {
   width: 30vw;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin-top: 0;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -34,6 +34,7 @@ h2, h3 {
   display: inline-flex;
   justify-content: flex-end;
   margin-right: 13vw;
+  margin-bottom: 5vh;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -50,7 +51,8 @@ h2, h3 {
   margin: 10px auto;
 }
 
-.actual-button, .checkout {
+.actual-button,
+.checkout {
   background-color: #f47126;
   padding: 12px;
   height: 40px;
@@ -58,7 +60,6 @@ h2, h3 {
   font-size: 18px;
   font-weight: normal;
   border: none;
-  
 }
 
 .checkout {
