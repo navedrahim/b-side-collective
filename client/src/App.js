@@ -7,7 +7,7 @@ import SignUp from "./screens/SignUp/SignUp.jsx"
 import SignOut from "./screens/SignOut/SignOut.jsx"
 import SignIn from "./screens/SignIn/SignIn.jsx";
 import Home from "./screens/Home/Home.jsx";
-
+import Cart from "./screens/Cart/Cart.jsx"
 import { verifyUser } from "./services/users.js"
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
@@ -26,6 +26,10 @@ function App() {
   return (
     <div className="App">
       <Switch>
+        <Route exact path="/cart">
+          <Cart user={user} />
+          {/* { user ? <Cart user={user} /> : <Redirect to="/sign-up" />} */}
+        </Route>
         <Route exact path="/">
           <Home user={user}/>
         </Route>

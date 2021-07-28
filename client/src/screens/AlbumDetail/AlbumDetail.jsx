@@ -8,6 +8,7 @@ function AlbumDetail(props) {
   const [album, setAlbum] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
   const [deleted, setDeleted] = useState(false);
+  const [cartText, setCartText] = useState("ADD TO CART")
   const { id } = useParams();
 
   useEffect(() => {
@@ -32,6 +33,18 @@ function AlbumDetail(props) {
     return <Redirect to={"/albums"} />;
   }
 
+  const addToCart = () => {
+    if (localStorage.getItem("cart")) {
+    const cartItems = localStorage.getItem("cart").split(",")
+    cartItems.push(id)
+    console.log(`cartItems: ${cartItems}`)
+    localStorage.setItem("cart", cartItems)
+  } else {
+    localStorage.setItem("cart", id)
+    console.log(`localSTorage: ${localStorage}`)
+  }
+    setCartText("ADDED")
+  }
   return (
     <Layout user={props.user}>
       <div className="album-detail-container">
@@ -57,6 +70,9 @@ function AlbumDetail(props) {
           src={album.imageURL}
           alt={album.album}
         />
+      </div>
+      <div className="add-to-cart">
+        <button className="add-to-cart-button" onClick={addToCart}>{cartText}</button>
       </div>
     </Layout>
   );
