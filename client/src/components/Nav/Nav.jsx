@@ -7,6 +7,9 @@ const authenticatedOptions = (
     <NavLink className="link" to="/add">
       Add Albums
     </NavLink>
+    <NavLink className="link" to="/cart">
+      Cart
+    </NavLink>
     <NavLink className="link" to="/sign-out">
       Sign Out
     </NavLink>
