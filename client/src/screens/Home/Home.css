@@ -243,3 +243,14 @@ body {
         padding: 5px 10px;
       }
     }
+
+    @media screen and (max-height: 825px) {
+      .home-header {
+        height: fit-content;
+      }
+      
+      .home-header img {
+        margin: 8px;
+        height: 95%;
+      }
+    }
