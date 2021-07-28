@@ -1,3 +1,4 @@
+import "./SignIn.css"
 import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
@@ -47,7 +48,7 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return <button type="submit">SIGN IN</button>;
     }
   };
 
@@ -55,9 +56,10 @@ const SignIn = (props) => {
 
   return (
     <Layout user={props.user}>
-    <div className="form-container">
+    <div className="signin-form">
       <form onSubmit={onSignIn}>
         <input
+          id="signin-email-input"
           required
           type="text"
           name="email"
@@ -66,6 +68,7 @@ const SignIn = (props) => {
           onChange={handleChange}
         />
         <input
+          id="signin-password-input"
           required
           type="password"
           name="password"

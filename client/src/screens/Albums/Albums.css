@@ -1,0 +1,95 @@
+.album-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+.album-cards {
+  margin: 0 2vw;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.albums-card {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  padding: 1vh 1vw;
+}
+.albums-card:hover {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2),
+    0 20px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000000;
+}
+.albums-cover {
+  width: 22vw;
+  height: 22vw;
+}
+.albums-name,
+.albums-artist {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 1vh;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+  .album-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .albums-card {
+    width: 33vw;
+  }
+  .albums-cover {
+    width: 33vw;
+    height: 33vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 1vh;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .album-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .album-cards {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  .albums-card {
+    width: 50vw;
+  }
+  .albums-cover {
+    width: 50vw;
+    height: 50vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 1vh;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .albums-card {
+    width: 60vw;
+  }
+  .albums-cover {
+    width: 60vw;
+    height: 60vw;
+  }
+  .albums-name,
+  .albums-artist {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 1vh;
+    font-size: 20px;
+  }
+}

@@ -1,5 +1,6 @@
-
+import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const authenticatedOptions = (
   <>
@@ -29,18 +30,60 @@ const alwaysOptions = (
   </>
 );
 const Nav = ({ user }) => {
+  const [visible, setVisible] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setVisible(true);
+        setHamburger(false);
+      } else {
+        setVisible(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <nav>
-      <div className="nav">
+    <>
+      <nav>
         <NavLink className="logo" to="/">
           B-Side Collective
         </NavLink>
-        <div className="links">
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+        <button
+          className="hamburger" id="hamburger-button"
+          // style={{ display: visible ? "none" : "flex" }}
+          onClick={() => setHamburger(!hamburger)}
+        >
+          <div className="hamburger-detail"></div>
+          <div className="hamburger-detail"></div>
+          <div className="hamburger-detail"></div>
+        </button>
+        <div className="nav">
+          <div className="links">
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
         </div>
+      </nav>
+      <div
+        style={{
+          display:
+            (visible && window.innerWidth < 768) ||
+            (hamburger && window.innerWidth < 768)
+              ? "flex"
+              : "none",
+        }}
+        className="hamburger-links"
+      >
+        {alwaysOptions}
+        {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
-    </nav>
+    </>
   );
 };
 export default Nav;

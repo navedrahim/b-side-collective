@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background-color: #efe0ca;
+}
+.layout-children {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header section styling  */
+
+.home-header {
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: #575151;
+  padding: 0 20px 20px 20px;
+}
+
+.home-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 40px 30px;
+  margin: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-header h2 {
+  color: #efe0ca;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.home-header button {
+  background-color: #f47126;
+  padding: 12px;
+  height: 95px;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+}
+
+.home-header img {
+  width: 840px;
+  margin: 10px 120px 20px 20px;
+}
+
+/* secondary section styling */
+
+.home-secondary-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.home-secondary-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  width: 65vw;
+  margin: 65px 0;
+  background-color: #575151;
+  color: #efe0ca;
+}
+
+.secondary-image-container img {
+  width: 480px;
+}
+
+.home-secondary-card p {
+  padding: 35px;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* media queries  */
+/* 1800 break point */
+@media screen and (min-width: 1750px) {
+  .home-header img {
+    width: 1000px;
+  }
+}
+
+/* 1024 break point */
+@media screen and (max-width: 1024px) {
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  .home-header-text {
+    margin: 25px;
+    padding: 10px;
+  }
+
+  .home-header h2 {
+    margin-bottom: 50px;
+  }
+  .home-header button {
+    margin: 5px;
+    padding: 12px;
+    height: 75px;
+    width: 180px;
+    font-size: 25px;
+  }
+  .home-header img {
+    margin: 15px;
+  }
+  .home-secondary-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px 30px 40px 30px;
+  }
+  .home-secondary-card p {
+    padding: 10px;
+  }
+}
+/* 768 break point */
+
+@media screen and (max-width: 768px) {
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding-bottom: 100px;
+  }
+  .home-header-text {
+    margin: 25px;
+    padding: 10px;
+  }
+
+  .home-header h2 {
+    margin-bottom: 50px;
+  }
+  .home-header button {
+    margin: 5px;
+    padding: 12px;
+    height: 75px;
+    width: 180px;
+    font-size: 25px;
+  }
+  .home-header img {
+    margin: 15px;
+    width: 675px;
+  }
+  .home-secondary-card {
+    width: 75vw;
+  }
+}
+/* 540 break point */
+
+@media screen and (max-width: 540px) {
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  .home-header-text {
+    margin: 25px;
+    padding: 20px;
+  }
+
+  .home-header h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .home-header button {
+    margin: 5px;
+    padding: 12px;
+    height: 65px;
+    width: 170px;
+    font-size: 22px;
+  }
+  .home-header img {
+    margin: 15px;
+    width: 375px;
+  }
+  .home-secondary-card {
+    width: 75vw;
+    margin: 20px auto;
+    padding: 8px 15px;
+  }
+  .home-secondary-card img {
+    width: 300px;
+    margin: 8px;
+  }
+  .home-secondary-card p {
+    font-size: 24px;
+  }
+}
+/* 375 break point */
+@media screen and (max-width: 540px) {
+  .home-header-text {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .home-header h2 {
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+  .home-header button {
+    margin: 5px;
+    padding: 12px;
+    height: 65px;
+    width: 170px;
+    font-size: 22px;
+  }
+  .home-header img {
+    margin: 8px;
+    width: 325px;
+  }
+  .home-secondary-card {
+    width: 75vw;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .home-secondary-card img {
+    width: 250px;
+  }
+  .home-secondary-card p {
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-height: 825px) {
+  .home-header {
+    height: fit-content;
+  }
+  .home-header img {
+    margin: 8px;
+    height: 95%;
+  }
+}
